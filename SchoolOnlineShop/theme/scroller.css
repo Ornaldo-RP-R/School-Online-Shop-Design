@@ -1,0 +1,19 @@
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  margin-right: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--light-gray);
+  border-radius: 7px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  min-height: 50px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--light-gray);
+  background-clip: padding-box;
+}

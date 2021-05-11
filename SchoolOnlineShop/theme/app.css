@@ -1,0 +1,29 @@
+:root {
+  --primaryColor: #212121;
+  --secondaryColor: #f27a1a;
+  --body-color: #fafafa;
+  --light-gray: #dadada;
+  --link-selection: #0496ff;
+}
+
+html {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--body-color);
+  color: var(--primaryColor);
+  font-family: "Piazzolla";
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.container.order-shop {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

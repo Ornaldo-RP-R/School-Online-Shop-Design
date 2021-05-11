@@ -1,0 +1,45 @@
+span.input {
+  position: relative;
+  outline: none;
+  min-height: 25px;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+span.input input {
+  border: 1px solid var(--light-gray);
+  background: var(--body-color);
+  border-radius: 4px;
+  color: var(--primaryColors);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  position: absolute;
+  padding: 5px 10px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--body-gray);
+  transition: 0.5s ease-in-out;
+}
+
+span.input input:hover,
+span.input input:focus {
+  border: 1px solid var(--secondaryColor);
+  background: #fff;
+  box-shadow: 0 0 6px 0.6px var(--light-gray);
+  transition: 0.5s ease-in-out;
+}
+
+span.input.simple input:hover,
+span.input.simple input:focus {
+  border: 1px solid var(--light-gray);
+  background: #fff;
+  box-shadow: 0 0 2px 0.2px var(--light-gray);
+  transition: 0.5s ease-in-out;
+}
