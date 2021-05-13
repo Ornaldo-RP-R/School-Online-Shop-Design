@@ -77,3 +77,11 @@ section.login {
   text-transform: uppercase;
   font-size: 13px;
 }
+
+.input__forget-password{
+    top: -50px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--secondaryColor);
+    position: relative;
+}

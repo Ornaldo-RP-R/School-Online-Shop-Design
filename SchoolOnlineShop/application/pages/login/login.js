@@ -9,6 +9,7 @@ const loadSignInForm=()=>{
                 ${SignUpFormTemplate.passwordInput}
             </div>`)
     .append(LoginFormTemplate.submitButton)
+    .append(`<span class="input__forget-password">Forget Password ? </span>`)
     signUpButton.removeClass("active")
     loginButton.addClass("active")
 }
