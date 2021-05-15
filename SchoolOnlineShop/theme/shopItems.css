@@ -1,0 +1,117 @@
+.shopItems{
+    display: grid;
+    height: max-content;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    padding: 20px;
+}
+.shopItems__cart{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 0 0 5px 1px var(--light-gray);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopItems__cart::after{
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(-45deg ,rgba(44, 62, 80, 255) , #fff);
+    clip-path: circle(75px at 15% 10%);
+    transition: 0.5s ease-in-out;
+}
+
+.shopItems__cart:hover::after{
+    clip-path: circle(300px at 20% -60%);
+}
+.shopItems__cart:hover img{
+    margin-top: 20px;
+}
+
+.shopItems__cart div.submit{
+    visibility: hidden;
+    display: flex;
+    width: 80%;
+   margin-top: 20px;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.shopItems__cart div.submit input{
+    width: 20%;
+    margin-right: 10px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    color: var(--primaryColor);
+    outline: none;
+    font-size: 15px;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.shopItems__cart button{
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: 500;
+   color: var(--primaryColor);
+    border: 2px solid var(--light-gray);
+   border-radius: 5px;
+   background: transparent;
+   padding: 5px 25px;
+}
+
+.shopItems__cart:hover div.submit{
+   visibility: visible;
+}
+
+.shopItems__cart span:nth-child(2){
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+}
+
+.shopItems__cart span:nth-child(3){
+    font-size: 1rem;
+    font-weight: 500;
+}
+.shopItems__cart span b{
+    color: var(--secondaryColor);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.shopItems__cart img{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    object-fit: contain;
+    z-index: 1;
+    position: relative;
+    width: 70%;
+    max-width: 70%;
+    min-width: 70%;
+    height: 95px;
+    transition: 0.5s ease-in-out;
+}

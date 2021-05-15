@@ -16,6 +16,6 @@ const cardFooterTemplate=(title)=>{
 
 const listenToCardClick=(card,item)=>{
     card.click(()=>{
-      window.location.replace(`${pageLocation}/shopItems/shopItems.html?categoryId=${item.id}`);
+      window.location.replace(addUrlParams(`${pageLocation}/shopItems/shopItems.html`,[`categoryId=${item.id}`]))
     })
 }
