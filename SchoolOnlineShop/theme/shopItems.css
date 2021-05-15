@@ -6,6 +6,7 @@
     grid-column-gap: 30px;
     grid-row-gap: 50px;
     padding: 20px;
+    min-height: calc(100vh - 305px);
 }
 .shopItems__cart{
     width: 100%;
