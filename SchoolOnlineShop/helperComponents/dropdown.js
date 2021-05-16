@@ -1,4 +1,5 @@
-document.querySelectorAll(".dropdown").forEach((dropdown) => {
+const checkForDropdowns=()=>{
+  document.querySelectorAll(".dropdown").forEach((dropdown) => {
   if (!dropdown.classList.contains("tooltip")) {
     dropdown.addEventListener("click", (e) => {
       event.stopPropagation();
@@ -36,3 +37,7 @@ $(document).click(function () {
 $(".dropdown .content").click(function (event) {
   event.stopPropagation();
 });
+}
+
+
+$( document ).ready(checkForDropdowns);

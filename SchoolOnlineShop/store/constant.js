@@ -38,16 +38,18 @@ const topCategories = [
 ];
 
 const shopItems = [
-   { description: "Addidas shoes", imgSrc: `addidas1.png`, price: 55 },
-    { description: "Addidas cap", imgSrc: `addidas2.png`, price: 60 },
-    { description: "Addidas shoes", imgSrc: `addidas3.png`, price: 80 },
-    { description: "Addidas shoes", imgSrc: `addidas4.png`, price: 70 },
-    { description: "Nike shoes", imgSrc: `nike.png`, price: 55 },
-    { description: "Addidas cap", imgSrc: `addidas2.png`, price: 60 },
-    { description: "Addidas clothing", imgSrc: `adidasCloth.png`, price: 80 },
-    { description: "Jewlery Tiffany", imgSrc: `jewl.png`, price: 70 },
+   { description: "Addidas shoes", imgSrc: `addidas1.png`, price: 55, id:0, },
+    { description: "Addidas cap", imgSrc: `addidas2.png`, price: 60 , id:1,},
+    { description: "Addidas shoes", imgSrc: `addidas3.png`, price: 80, id:2, },
+    { description: "Addidas shoes", imgSrc: `addidas4.png`, price: 70 , id:3,},
+    { description: "Nike shoes", imgSrc: `nike.png`, price: 55 , id:4,},
+    { description: "Addidas cap", imgSrc: `addidas2.png`, price: 60, id:5, },
+    { description: "Addidas clothing", imgSrc: `adidasCloth.png`, price: 80 , id:6,},
+    { description: "Jewlery Tiffany", imgSrc: `jewl.png`, price: 70 , id:7,},
     
 ];
+
+let itemsInCart=[];
 
 const addParamByCondition = (url, params, condition = true) => {
   let newUrl = url;
